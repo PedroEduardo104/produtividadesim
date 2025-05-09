@@ -1,6 +1,6 @@
 # ProdutividadeSim
 
-Uma aplicação web de produtividade desenvolvida com React e Vite, focada em gerenciamento de tarefas e uso da técnica Pomodoro.
+Uma aplicação web de produtividade desenvolvida com React e Vite, focada em gerenciamento de tarefas.
 
 ## Funcionalidades
 

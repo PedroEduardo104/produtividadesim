@@ -6,10 +6,6 @@ Uma aplicação web de produtividade desenvolvida com React e Vite, focada em ge
 
 - Quadro de Tarefas (Kanban): crie, edite e gerencie tarefas
 
-- Temporizador Pomodoro: técnica para melhorar o foco e a produtividade
-
-- Persistência Simulada: tarefas e dados simulados para testes
-
 - Layout Modular: componentes reutilizáveis com Sidebar e Navbar
 
 ## Tecnologias Utilizadas

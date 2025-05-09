@@ -1,0 +1,157 @@
+.dashboard-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.verde {
+  color: #00b050;
+  font-weight: bold;
+}
+
+.azul {
+  color: #0071ce;
+  font-weight: bold;
+}
+
+.links-dashboard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-dashboard {
+  color: #0071ce;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link-dashboard:hover {
+  text-decoration: underline;
+  color: #0055a4;
+}
+
+.separator {
+  color: #999;
+}
+
+.quadro {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.coluna {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.coluna-topo {
+  background-color: #0071ce;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao-add {
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-add:hover {
+  color: #cce7ff;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icones-card {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icone-editar,
+.icone-excluir,
+.icone-arrastar {
+  cursor: pointer;
+  color: #555;
+}
+
+.icone-editar:hover {
+  color: #0071ce;
+}
+
+.icone-excluir:hover {
+  color: #ff3333;
+}
+
+.icone-arrastar {
+  cursor: grab;
+}
+
+.nova-tarefa-box,
+.edicao-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.nova-tarefa-box input,
+.edicao-box input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.botao-salvar {
+  padding: 6px 12px;
+  border: none;
+  background-color: #0071ce;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botao-salvar:hover {
+  background-color: #005fa3;
+}

@@ -17,7 +17,7 @@ Uma aplicação web de produtividade desenvolvida com React e Vite, focada em ge
 
 ## Estrutura de Pastas
 ```
-produtividadesim-react/
+ProdutividadeSim/
 ├── index.html
 ├── src/
 │   ├── main.jsx

@@ -17,7 +17,7 @@ Uma aplicação web de produtividade desenvolvida com React e Vite, focada em ge
 
 ## Estrutura de Pastas
 ```
-ProdutividadeSim/
+produtividadesim-react/
 ├── index.html
 ├── src/
 │   ├── main.jsx
@@ -30,7 +30,7 @@ ProdutividadeSim/
 1. Clone o repositório:
 ```
 git clone <url-do-repo>
-cd ProdutividadeSim
+cd produtividadesim-react
 ```
 2. Instale as dependências:
 ```

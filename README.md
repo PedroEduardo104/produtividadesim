@@ -30,7 +30,7 @@ ProdutividadeSim/
 1. Clone o repositório:
 ```
 git clone <url-do-repo>
-cd produtividadesim-react
+cd ProdutividadeSim
 ```
 2. Instale as dependências:
 ```

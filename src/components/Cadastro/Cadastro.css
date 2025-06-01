@@ -1,0 +1,112 @@
+/* src/components/Cadastro/Cadastro.css */
+
+/* Estilos Gerais para a Página de Cadastro */
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Fundo cinza claro */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos da Caixa de Cadastro (o painel branco) */
+.cadastro-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;
+  max-width: 380px; /* Largura máxima para a caixa de cadastro */
+  text-align: center; /* Centraliza o cabeçalho e o botão */
+}
+
+.cadastro-box h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Estilos para o Grupo de Input (Label + Input) */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left; /* Alinha o label e o input à esquerda */
+}
+
+.input-group label {
+  display: block; /* Faz o label ocupar toda a largura */
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%; /* Ocupa a largura total do grupo */
+  padding: 12px;
+  border: 1px solid #ddd; /* Borda cinza claro */
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Garante que padding não adicione largura */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao focar */
+}
+
+.input-group input:focus {
+  border-color: #007bff; /* Borda azul ao focar */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave ao focar */
+  outline: none; /* Remove o outline padrão do navegador */
+}
+
+/* Estilos do Botão "Criar Conta" (o botão azul) */
+.botao-criar-conta {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff; /* Azul primário, similar ao da imagem */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px; /* Espaço acima do botão */
+}
+
+.botao-criar-conta:hover {
+  background-color: #0056b3; /* Azul mais escuro no hover */
+  transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+.botao-criar-conta:active {
+  transform: translateY(0); /* Volta ao normal ao clicar */
+}
+
+/* Estilos do Link "Já tem conta? Entre aqui." (o botão verde) */
+.link-ja-tem-conta {
+  display: block; /* Para se comportar como um bloco e ocupar a largura total */
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px; /* Espaço entre o botão "Criar Conta" e este link */
+  background-color: #28a745; /* Verde vibrante, similar ao da imagem de cadastro */
+  color: white;
+  text-align: center;
+  text-decoration: none; /* Remove o sublinhado padrão de links */
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-sizing: border-box; /* Garante que padding e borda não aumentem a largura */
+}
+
+.link-ja-tem-conta:hover {
+  background-color: #218838; /* Verde mais escuro no hover */
+  transform: translateY(-2px); /* Efeito de "levantar" */
+}
+
+.link-ja-tem-conta:active {
+  transform: translateY(0); /* Volta ao normal ao clicar */
+}

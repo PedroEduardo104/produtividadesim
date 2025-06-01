@@ -1,0 +1,38 @@
+.sobre-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: left;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+}
+ 
+.sobre-container h1 {
+    color: #0071ce;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+ 
+.sobre-container h2 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0071ce;
+}
+ 
+.sobre-container ul {
+    list-style: decimal;
+    padding-left: 20px;
+}
+ 
+.sobre-container li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+ 
+.sobre-container p {
+    font-size: 1.05rem;
+    margin-top: 20px;
+    line-height: 1.6;
+}

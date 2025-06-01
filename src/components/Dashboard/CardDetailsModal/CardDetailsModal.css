@@ -1,0 +1,239 @@
+/* src/components/Dashboard/CardDetailsModal/CardDetailsModal.css */
+
+/* Overlay do Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escurecido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que o modal esteja acima de tudo */
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+  background-color: #f4f5f7; /* Cor de fundo do Trello para modais */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px; /* Largura máxima do modal */
+  max-height: 90vh; /* Altura máxima para rolagem */
+  overflow-y: auto; /* Adiciona rolagem se o conteúdo for muito longo */
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animações de Entrada */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Cabeçalho do Modal */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #172b4d;
+  font-weight: 700;
+  word-break: break-word; /* Quebra palavras longas */
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #6b778c;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.modal-close-button:hover {
+  background-color: rgba(9,30,66,.08);
+  color: #172b4d;
+}
+
+/* Corpo do Modal */
+.modal-body {
+  flex-grow: 1; /* Ocupa o espaço restante */
+  padding-right: 5px; /* Para evitar que a barra de rolagem corte conteúdo */
+}
+
+.modal-section {
+  margin-bottom: 20px;
+}
+
+.modal-section h4 {
+  font-size: 16px;
+  color: #5e6c84;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.modal-input,
+.modal-textarea {
+  width: calc(100% - 20px); /* 100% menos padding */
+  padding: 10px;
+  border: 1px solid #dfe1e6;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #172b4d;
+  box-sizing: border-box;
+  resize: vertical; /* Permite redimensionar a textarea verticalmente */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-input:focus,
+.modal-textarea:focus {
+  border-color: #0079bf;
+  box-shadow: 0 0 0 2px rgba(0, 121, 191, 0.2);
+  outline: none;
+}
+
+.modal-textarea {
+  min-height: 80px;
+}
+
+/* Checklist */
+.checklist {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: inset 0 0 0 1px #dfe1e6;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.checklist-item:last-child {
+  margin-bottom: 0;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin: 0; /* Remover margem padrão do input */
+}
+
+.checklist-item span {
+  flex-grow: 1;
+  color: #172b4d;
+  font-size: 14px;
+}
+
+.checklist-item span.completed {
+  text-decoration: line-through;
+  color: #5e6c84;
+}
+
+.delete-checklist-item-button {
+  background: none;
+  border: none;
+  color: #929292;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.delete-checklist-item-button:hover {
+  color: #cf1322;
+}
+
+.add-checklist-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.add-checklist-item input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #dfe1e6;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.add-item-button {
+  background-color: #5aac44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.add-item-button:hover {
+  background-color: #61bd4f;
+}
+
+/* Rodapé do Modal */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #dfe1e6;
+}
+
+.modal-save-button,
+.modal-delete-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal-save-button {
+  background-color: #0079bf; /* Azul Trello */
+  color: white;
+  border: none;
+}
+
+.modal-save-button:hover {
+  background-color: #026aa7;
+}
+
+.modal-delete-button {
+  background-color: #cf1322; /* Vermelho */
+  color: white;
+  border: none;
+}
+
+.modal-delete-button:hover {
+  background-color: #a8071a;
+}
